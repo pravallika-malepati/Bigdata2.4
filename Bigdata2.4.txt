@@ -1,0 +1,13 @@
+                                                 ASSIGNMENT 2.4
+1)Importance of name node in hadoop cluster.
+
+A)The NameNode is the centerpiece of an HDFS file system. 
+     
+         1.Name Node is palced in master Node.It is used to store the meta data  about the data nodes which are also calles as the slave nodes.
+         2.The main importance of name node is if the name node falls then the cluster goes down.
+         3.It keeps the directory tree of all files in the file system, and tracks where across the cluster the file data is kept. It does not store the data of                   these files itself.
+         4.NameNode manages HDFS storage. To ensure high availability, we have both an active NameNode and a standby NameNode. Each                    runs on its own master node. 
+         5.Namenode holds the meta data for the HDFS like Namespace information.All this information is stored   in main memory.
+
+        6.The name node is the single point of failure in the hadoop cluster.
+        7.NameNode does not store the actual data or the dataset. The data itself is actually stored in the DataNodes.
